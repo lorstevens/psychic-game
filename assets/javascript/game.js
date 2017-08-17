@@ -26,7 +26,7 @@ document.onkeyup = function(event) {
 // if user guess is same as random computer guess, then increase point. else if out of guesses, add to losses. 
     if(userGuess === computerGuess) {
      	win++;
-      alert("Yes! You are correct")
+      alert("Yes! You are correct");
       document.getElementById("win").innerHTML = win;
     } else if(guessesLeft === 0) {
      lose++
