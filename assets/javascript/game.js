@@ -25,14 +25,15 @@ document.onkeyup = function(event) {
 
 // if user guess is same as random computer guess, then increase point. else if out of guesses, add to losses. 
     if(userGuess === computerGuess) {
-     	win++
+     	win++;
+      alert("Yes! You are correct")
       document.getElementById("win").innerHTML = win;
     } else if(guessesLeft === 0) {
      lose++
      document.getElementById("loss").innerHTML = lose;
  	}
 
-// why does this have to before reset function?
+// why does this have to be before reset function?
 if (guessesLeft === 0) {
 	reset ();
 }
